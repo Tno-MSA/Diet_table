@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Diet Table</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <style>
+    @media print {
+      .btn-print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="javascript:window.print()" class="btn-print">Print</button>
+  <div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">الوجبات</th>
+          <th scope="col">المواعيد</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!--After waking up-->
+        <tr>
+          <td>1 كوب ماء ليمون دافئ (1ليمون) + 1 كوب ماء دافئ</td>
+          <th class="rightside" class="rightside" scope="row">مباشرة بعد الاستقياظ</th>
+        </tr>
+
+        <!-- Breakfast -->
+        <tr>
+          <td id="breakfast"></td>
+          <th class="rightside" scope="row">الفطار <br> (خلال 1 ساعة من الاستقياظ)</th>
+        </tr>
+
+        <!-- Snake #1 -->
+        <tr>
+          <td id="snack1"></td>
+          <th class="rightside" scope="row">وجبة خفيفة #1 <br> (<span>ا</span> 1:00 - 1:30 مساءً)</th>
+        </tr>
+
+        <!-- before Lunch -->
+        <tr>
+          <td><span>ا</span>2 كوب ماء</td>
+          <th class="rightside" scope="row"><span>ا</span> 30-60 دقيقة قبل الغداء</th>
+        </tr>
+
+        <!-- Lunch -->
+        <tr>
+          <td id="lunch"></td>
+          <th class="rightside" scope="row">الغداء<br> (<span>ا</span> 4:00 - 5:00 مساءً)</th>
+        </tr>
+
+        <!-- Snake #2 -->
+        <tr>
+          <td id="snack2"></td>
+          <th class="rightside" scope="row">وجبة خفيفة #2 <br> (<span>ا</span> 6:30 مساءً)</th>
+        </tr>
+
+        <!-- Before Dinner -->
+        <tr>
+          <td>2 كوب ماء</td>
+          <th class="rightside" scope="row"><span>ا</span> 30-60 دقيقة قبل العشاء</th>
+        </tr>
+
+        <!-- Dinner -->
+        <tr>
+          <td id="dinner"></td>
+          <th class="rightside" scope="row">العشاء<br> (<span>ا</span> 9:30 مساءً)</th>
+        </tr>
+
+        <!-- Beofe Bed -->
+        <tr>
+          <td> كوب زنجبيل مسلوق مع القرفة والكركم + اوميجا 3</td>
+          <th class="rightside" scope="row"><span>ا</span>30 دقيقة قبل النوم</th>
+        </tr>
+
+      </tbody>
+    </table>
+    <script src="app.js"></script>
+
+  </div>
+</body>
+
+</html>
